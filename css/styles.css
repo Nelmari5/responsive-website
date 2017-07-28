@@ -1,0 +1,574 @@
+* {
+   box-sizing: border-box; 
+}
+
+.col-1 {width: 8.33333%;}
+.col-2 {width: 16.666667%;}
+.col-3 {width: 25%; /*background: blue; height: 300px;*/}
+.col-4 {width: 33.33333%;}
+.col-5 {width: 41.66667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333%;}
+.col-8 {width: 66.66667%;}
+.col-9 {width: 75%; /*background: red; height: 300px;*/}
+.col-10 {width: 83.33333%;}
+.col-11 {width: 91.66667%;}
+.col-12 {width: 100%;}
+
+[class*='col-'] {
+    float: left;
+}
+
+.row::before, .row::after, nav:before, nav:after, main:before, main:after, footer:before, footer:after, section:before, section:after, article:before, article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #4474A2;
+    border-color: black;
+    max-height: 110px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: inline-block;
+    padding:0;
+    margin:0 auto;
+    list-style: none;
+    position: relative;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 80px;
+    padding: 14px 5px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 10px;
+    line-height: 70px;
+    clear: right;
+}
+
+span {
+    color: #4474A2;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.header {
+    background-image: url('../img/cover.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 250px 50px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 10px 10px;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    padding: 10px 10px;
+    transform: scale(1.1);
+}
+
+button {
+    padding: 5px 40px 5px 40px;
+    border: 0.5px solid black;
+    margin-top: 15px;
+}
+
+button:hover {
+    border: 0.5px solid #4474A2;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4474A2;
+}
+
+.info1 h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.info2 h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.info3 h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.info4 h1 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.boards {
+    background-image: url('../img/surfboards.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.lessons {
+    background-image: url('../img/surflessons.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.rentals {
+    background-image: url('../img/rentals.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.shop {
+    background-image: url('../img/shop.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.info1 {
+    font-family: 'Anton', sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.info2 {
+    font-family: 'Anton', sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.info3 {
+    font-family: 'Anton', sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.info4 {
+    font-family: 'Anton', sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.row img {
+    width: 100%;
+}
+
+footer {
+    height: 100%;
+    max-height: 219px;
+    background-color: #678A96;
+}
+
+.menu2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 30px 0 0;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.social-media {
+    float: right;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.logo2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+/*-----------------------ABOUT START--------------------------*/
+
+.aboutcover {
+    background-color: #C6E7DE;
+    height: 257px;
+    margin-top: 154px;
+    margin-bottom: 77px;
+}
+
+.about h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 146px;
+    line-height: 260px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent; 
+  border-left: 60px solid white;
+  display: inline-block;
+}
+
+.gallery {
+    height: 300px;
+    
+    display: inline-block;
+    
+}
+
+
+/*-----------------------ABOUT END--------------------------*/
+
+
+
+/*-----------------------CONTACT START--------------------------*/
+
+.contact h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    line-height: 260px;
+    margin-left: 20px;
+    text-align: center;
+    color: #678A96;
+}
+
+.contactinfo {
+    background-color: #F2E4D2;
+    height: 446px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+
+.contactinfo h2 {
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #4474A2;
+    padding: 12px 20px;
+    border: 0.5px solid;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4474A2;
+    border-color: white;
+    color: white;
+}
+
+.container {
+    background-color: #4474A2;
+    padding: 20px;
+    float: right;
+}
+
+h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: #678A96;
+    margin: 50px 20px 20px 20px;
+}
+
+h4 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #678A96;
+    margin: 10px 10px 30px 10px;
+}
+
+/*-----------------------CONTACT END--------------------------*/
+
+
+
+/*-----------------------flipping card--------------------------*/
+
+.fok {
+    margin: 0 auto;
+}
+
+.flip-container1 {
+    perspective: 1000px;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.flip-container1:hover .flipper1 {
+    transform: rotateY(180deg);
+}
+
+.flip-container1, .front1, .back1 {
+    width: 300px;
+    height: 300px;
+}
+
+.front1 {
+    background-image: url('../img/1.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    line-height: 50px;
+    box-sizing: border-box;;
+    text-align: center;
+    background-color: #C6E7DE;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipper1 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front1, .back1 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flip-container2 {
+    perspective: 1000px;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.flip-container2:hover .flipper2 {
+    transform: rotateY(180deg);
+}
+
+.flip-container2, .front2, .back2 {
+    width: 300px;
+    height: 300px;
+}
+
+.front2 {
+    background-image: url('../img/2.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    line-height: 50px;
+    box-sizing: border-box;;
+    text-align: center;
+    background-color: #C6E7DE;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipper2 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front2, .back2 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flip-container3 {
+    perspective: 1000px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.flip-container3:hover .flipper3 {
+    transform: rotateY(180deg);
+}
+
+.flip-container3, .front3, .back3 {
+    width: 300px;
+    height: 300px;
+}
+
+.front3 {
+    background-image: url('../img/3.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back3 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    line-height: 50px;
+    box-sizing: border-box;;
+    text-align: center;
+    background-color: #C6E7DE;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipper3 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front3, .back3 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flip-container4 {
+    perspective: 1000px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.flip-container4:hover .flipper4 {
+    transform: rotateY(180deg);
+}
+
+.flip-container4, .front4, .back4 {
+    width: 300px;
+    height: 300px;
+}
+
+.front4 {
+    background-image: url('../img/4.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back4 {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    line-height: 50px;
+    box-sizing: border-box;;
+    text-align: center;
+    background-color: #C6E7DE;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipper4 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front4, .back4 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*-----------------------flipping card end--------------------------*/
+
+
+
+
